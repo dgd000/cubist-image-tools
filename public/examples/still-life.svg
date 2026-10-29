@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <defs>
+    <linearGradient id="wall" x2="1" y2="1"><stop stop-color="#ead9bf"/><stop offset="1" stop-color="#c9ad8e"/></linearGradient>
+    <linearGradient id="arch" x2="1" y2=".5"><stop stop-color="#829689"/><stop offset="1" stop-color="#a2b1a0"/></linearGradient>
+    <linearGradient id="vase"><stop stop-color="#a7482e"/><stop offset=".45" stop-color="#d87f53"/><stop offset=".7" stop-color="#da8b5d"/><stop offset="1" stop-color="#b65e38"/></linearGradient>
+    <linearGradient id="table" x2="0" y2="1"><stop stop-color="#ead7bb"/><stop offset="1" stop-color="#c9af8d"/></linearGradient>
+    <radialGradient id="fruit" cx=".35" cy=".3"><stop stop-color="#f7bc64"/><stop offset=".65" stop-color="#e59138"/><stop offset="1" stop-color="#c87831"/></radialGradient>
+    <filter id="shadow"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".075"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+  </defs>
+  <g filter="url(#grain)">
+    <path fill="url(#wall)" d="M0 0h1600v1200H0z"/>
+    <path fill="#b59f81" opacity=".5" d="M780 865V404a318 318 0 0 1 636 0v461Z"/>
+    <path fill="url(#arch)" d="M826 865V413a271 271 0 0 1 542 0v452Z"/>
+    <path d="M1368 413v452H826v-66l428-471Z" fill="#6b8274" opacity=".3"/>
+    <path d="M0 865h1600v335H0z" fill="url(#table)"/>
+    <path d="m0 1097 1600-199v61L300 1200H0Z" fill="#f8e7cd" opacity=".35"/>
+    <ellipse cx="755" cy="981" rx="275" ry="38" fill="#6e482c" opacity=".23" filter="url(#shadow)"/>
+    <path d="m699 985 587-63 174 42-683 84Z" fill="#775c3e" opacity=".16" filter="url(#shadow)"/>
+    <path d="M593 584c-18 95-136 143-136 249 0 96 63 175 180 175h80c117 0 180-79 180-175 0-106-118-154-136-249v-58H593Z" fill="url(#vase)"/>
+    <ellipse cx="677" cy="527" rx="84" ry="18" fill="#d99064"/><ellipse cx="677" cy="527" rx="68" ry="11" fill="#713e2c"/>
+    <path d="M653 528c2-88 41-226 77-361m-50 361c-12-89-45-161-101-240m96 193c61-87 125-126 206-168" fill="none" stroke="#5d6650" stroke-width="8"/>
+    <g fill="#566952"><path d="M717 222c-32-51-67-42-57-6 7 24 35 39 50 42Z"/><path d="M710 272c55-44 72-10 42 18-18 14-31 15-50 18Z"/><path d="M691 336c-67-54-74-13-42 12 15 12 29 17 38 18Z"/><path d="M699 383c65-50 88-8 45 19-20 12-35 12-51 15Z"/><path d="M604 326c-2-63-45-77-44-35 0 19 20 49 44 62Z"/><path d="M630 375c-59-17-86 16-46 28 17 6 38-1 59-10Z"/><path d="M774 384c2-64 43-73 44-34 1 24-20 39-44 55Z"/><path d="M816 352c54-12 77 27 35 33-20 2-34-3-47-12Z"/><path d="M857 328c11-54 50-60 47-25-3 19-23 31-47 40Z"/></g>
+    <ellipse cx="1093" cy="1018" rx="116" ry="20" fill="#62452e" opacity=".19" filter="url(#shadow)"/>
+    <ellipse cx="1091" cy="971" rx="89" ry="80" fill="url(#fruit)"/>
+    <path d="M1083 894c-2-20 13-31 23-30l-13 34" stroke="#67603a" stroke-width="5" fill="none"/>
+    <path d="M1097 884c21-30 59-28 59-18-8 18-34 27-59 18Z" fill="#657849"/>
+    <path d="M1239 1056c39-10 97-9 130 6l-57 75-138-25Z" fill="#e9dbbb"/><path d="m1239 1056 73 81 57-75" fill="none" stroke="#f7ecd4" stroke-width="3"/>
+  </g>
+</svg>

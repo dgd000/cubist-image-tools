@@ -1,0 +1,31 @@
+name: Bug report
+description: Report an image processing or interface problem.
+body:
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and OS versions
+      placeholder: Chrome on macOS, for example
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use the bundled sample where possible. Never attach private images or credentials.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: input
+    id: image
+    attributes:
+      label: Input format, file size, and dimensions
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
